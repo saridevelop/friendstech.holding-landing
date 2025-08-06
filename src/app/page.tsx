@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-8">
         <Projects />
         <Blog />
         <Services />
