@@ -1,6 +1,6 @@
 'use client'
 
-import { Package, ArrowRight, LucideIcon, TrendingUp, ShoppingBag } from 'lucide-react'
+import { Package, ArrowRight, LucideIcon, TrendingUp, ShoppingBag, FileText } from 'lucide-react'
 import Image from 'next/image'
 
 interface Project {
@@ -35,6 +35,16 @@ export default function Projects() {
       iconColor: 'bg-white-500',
       textColor: 'text-orange-400',
       technologies: ['Next.js', 'Vercel', 'Tailwind CSS', 'OpenAI'],
+      status: 'active'
+    },
+    {
+      title: 'Transferencia Vehículos OCR',
+      description: 'Automatiza el rellenado de documentos de transferencia de vehículos para la DGT. Sube imágenes del DNI y ficha técnica y la IA extrae automáticamente todos los datos necesarios.',
+      icon: FileText,
+      url: 'https://documentos-transferencia-vehiculo-ocr.friendstech.dev/',
+      iconColor: 'bg-green-500',
+      textColor: 'text-green-400',
+      technologies: ['Next.js', 'OpenAI', 'OCR', 'Tailwind CSS'],
       status: 'active'
     },
     {
