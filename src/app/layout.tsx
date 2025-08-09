@@ -3,22 +3,22 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'FriendsLab.dev - Convertimos ideas en productos digitales',
+  title: 'Friendstech.dev - Convertimos ideas en productos digitales',
   description: 'Somos un equipo de expertos que ayudamos a empresas y emprendedores a convertir ideas en productos digitales simples, efectivos y pragmáticos.',
   keywords: 'desarrollo software, aplicaciones móviles, desarrollo web, consultoria técnica, UX/UI design, productos digitales',
-  authors: [{ name: 'FriendsLab.dev' }],
-  creator: 'FriendsLab.dev',
+  authors: [{ name: 'Friendstech.dev' }],
+  creator: 'Friendstech.dev',
   openGraph: {
-    title: 'FriendsLab.dev - Convertimos ideas en productos digitales',
+    title: 'Friendstech.dev - Convertimos ideas en productos digitales',
     description: 'Somos un equipo de expertos que ayudamos a empresas y emprendedores a convertir ideas en productos digitales simples, efectivos y pragmáticos.',
-    url: 'https://friendslab.dev',
-    siteName: 'FriendsLab.dev',
+    url: 'https://friendstech.dev',
+    siteName: 'Friendstech.dev',
     locale: 'es_ES',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FriendsLab.dev - Convertimos ideas en productos digitales',
+    title: 'Friendstech.dev - Convertimos ideas en productos digitales',
     description: 'Somos dos desarrolladores expertos que ayudamos a empresas y emprendedores a convertir ideas en productos digitales simples, efectivos y pragmáticos.',
   },
   robots: {

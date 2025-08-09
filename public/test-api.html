@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Newsletter API</title>
+</head>
+<body>
+    <h1>Test Newsletter API</h1>
+    
+    <h2>Health Check</h2>
+    <button onclick="testHealth()">Test Health API</button>
+    <div id="health-result"></div>
+    
+    <h2>Newsletter Subscribe</h2>
+    <button onclick="testSubscribe()">Test Subscribe API</button>
+    <div id="subscribe-result"></div>
+    
+    <script>
+        async function testHealth() {
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                document.getElementById('health-result').innerHTML = 
+                    `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('health-result').innerHTML = 
+                    `<div style="color: red;">Error: ${error.message}</div>`;
+            }
+        }
+        
+        async function testSubscribe() {
+            try {
+                const response = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        email: 'test@example.com', 
+                        consent: true 
+                    }),
+                });
+                const data = await response.json();
+                document.getElementById('subscribe-result').innerHTML = 
+                    `<pre>Status: ${response.status}\n${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('subscribe-result').innerHTML = 
+                    `<div style="color: red;">Error: ${error.message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

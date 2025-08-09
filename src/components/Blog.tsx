@@ -1,5 +1,7 @@
 'use client'
 
+import NewsletterSection from './NewsletterSection'
+
 export default function Blog() {
   const posts = [
     {
@@ -39,28 +41,7 @@ export default function Blog() {
       </section>
 
       {/* Sección de Newsletter */}
-      <section id="newsletter" className="py-16 sm:py-24">
-        <div className="bg-gray-900 rounded-xl p-8 sm:p-12 text-center shadow-xl max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-white mb-4">Únete a nuestra comunidad privada</h2>
-          <p className="text-gray-400 mb-8">
-            Accede a contenido exclusivo: análisis de producto, herramientas secretas y los aprendizajes que usamos en cada proyecto.
-          </p>
-          <form action="#" method="POST" className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <input 
-              type="email" 
-              name="email" 
-              placeholder="Introduce tu email" 
-              className="w-full sm:w-auto px-6 py-3 rounded-full bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-200"
-            />
-            <button 
-              type="submit" 
-              className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-medium py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105"
-            >
-              Suscribirse
-            </button>
-          </form>
-        </div>
-      </section>
+      <NewsletterSection />
     </>
   )
 }

@@ -1,6 +1,6 @@
-# FriendsLab.dev - Landing Page
+# Friendstech.dev - Landing Page
 
-Landing page profesional para FriendsLab.dev, desarrollada con Next.js 14, TypeScript y TailwindCSS.
+Landing page profesional para Friendstech.dev, desarrollada con Next.js 14, TypeScript y TailwindCSS.
 
 ## 🚀 Características
 
@@ -160,9 +160,9 @@ El proyecto genera archivos estáticos con `next export`, compatible con cualqui
 
 Para dudas o customizaciones adicionales, contacta a:
 
-- **Email**: hola@friendslab.dev
-- **Web**: [friendslab.dev](https://friendslab.dev)
+- **Email**: hola@friendstech.dev
+- **Web**: [friendstech.dev](https://friendstech.dev)
 
 ---
 
-**Desarrollado con ❤️ por FriendsLab.dev**
+**Desarrollado con ❤️ por Friendstech.dev**

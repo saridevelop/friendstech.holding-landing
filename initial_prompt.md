@@ -1,4 +1,4 @@
-Quiero que generes el código completo de una página web profesional para representar nuestro proyecto llamado **FriendsLab.dev**.
+Quiero que generes el código completo de una página web profesional para representar nuestro proyecto llamado **Friendstech.dev**.
 
 🎯 **Contexto general**:
 Somos dos desarrolladores expertos en crear productos digitales. Podemos crear cualquier tipo de solución (app híbrida, mobile, web, etc.), y nuestra habilidad clave es detectar problemas reales de empresas o personas, y resolverlos con soluciones pragmáticas, simples y efectivas.

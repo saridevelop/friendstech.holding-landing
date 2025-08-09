@@ -12,11 +12,11 @@ export default function Footer() {
         <a href="https://github.com/friendstechdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors duration-200">
           <Github className="w-6 h-6" />
         </a>
-        <a href="mailto:info@friendslab.dev" aria-label="Email" className="text-gray-400 hover:text-white transition-colors duration-200">
+        <a href="mailto:info@friendstech.dev" aria-label="Email" className="text-gray-400 hover:text-white transition-colors duration-200">
           <Mail className="w-6 h-6" />
         </a>
       </div>
-      <p className="text-gray-500 text-sm">&copy; 2025 FriendsLab.dev. Todos los derechos reservados.</p>
+      <p className="text-gray-500 text-sm">&copy; 2025 Friendstech.dev. Todos los derechos reservados.</p>
     </footer>
   )
 }
