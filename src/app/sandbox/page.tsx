@@ -1,4 +1,4 @@
-import NewsletterForm from '@/components/NewsletterForm'
+import NewsletterSection from '@/components/NewsletterSection'
 import Contact from '@/components/Contact'
 import Link from 'next/link'
 
@@ -24,16 +24,16 @@ export default function SandboxPage() {
           {/* Newsletter Form */}
           <div>
             <h2 className="text-2xl font-bold text-white mb-6">Newsletter Form</h2>
-            <NewsletterForm />
+            <NewsletterSection />
             
             <div className="mt-6 p-4 bg-gray-800 rounded-lg">
               <h3 className="font-semibold text-white mb-2">Casos de prueba:</h3>
               <ul className="text-sm text-gray-300 space-y-1">
                 <li>• Email válido con consentimiento ✅</li>
-                <li>• Email duplicado (debe mostrar "ya suscrito")</li>
+                <li>• Email duplicado (debe mostrar &quot;ya suscrito&quot;)</li>
                 <li>• Email inválido</li>
                 <li>• Sin consentimiento (error)</li>
-                <li>• Honeypot: llenar campo "company" en DevTools</li>
+                <li>• Honeypot: llenar campo &quot;company&quot; en DevTools</li>
                 <li>• Rate limit: &gt;3 suscripciones mismo email en 10min</li>
               </ul>
             </div>
@@ -51,7 +51,7 @@ export default function SandboxPage() {
                 <li>• Nombre muy corto (&lt;2 caracteres)</li>
                 <li>• Email inválido</li>
                 <li>• Mensaje muy corto (&lt;10 caracteres)</li>
-                <li>• Honeypot: llenar campo "website" en DevTools</li>
+                <li>• Honeypot: llenar campo &quot;website&quot; en DevTools</li>
                 <li>• Rate limit: &gt;5 mensajes misma IP en 10min</li>
               </ul>
             </div>
