@@ -48,6 +48,16 @@ export default function Projects() {
       status: 'active'
     },
     {
+      title: 'LegalForge',
+      description: 'Automatiza tus contratos de arrendamiento, en minutos\nPlataforma para gestorías y despachos que necesitan generar contratos de forma masiva, segura y sin papeleo. Ahorra tiempo y reduce costes.',
+      logo: '/images/projects/logo-legal-forge.png',
+      url: 'https://legal-forge.friendstech.dev',
+      iconColor: 'bg-[#f5f0e6]', // azul marino
+      textColor: 'text-orange-400',
+      technologies: ['Next.js', 'OpenAI', 'Tailwind CSS', 'PDF', 'Automatización'],
+      status: 'active'
+    },
+    {
       title: 'CryptoTrader Bot',
       description: 'Programa de trading automático de criptomonedas que utiliza análisis técnico avanzado para realizar operaciones de compra y venta de forma automatizada.',
       icon: TrendingUp,
