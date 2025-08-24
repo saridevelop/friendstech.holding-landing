@@ -43,12 +43,19 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     <ReadingModeProvider>
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <div className="mb-8">
+        <div className="mb-8 flex gap-4">
+          <Link 
+            href="/" 
+            className="text-gray-400 hover:text-gray-300 transition-colors"
+          >
+            ← Volver a la home
+          </Link>
+          <span className="text-gray-600">•</span>
           <Link 
             href="/blog" 
             className="text-indigo-400 hover:text-indigo-300 transition-colors"
           >
-            ← Volver al blog
+            Ver todos los artículos
           </Link>
         </div>
 

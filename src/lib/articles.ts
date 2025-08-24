@@ -13,7 +13,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Cómo Validamos Ideas de Micro-SaaS Hablando Directamente con el Cliente (Antes de Escribir Una Línea de Código)',
+    title: 'Cómo Validar Ideas de Micro-SaaS Hablando Directamente con el Cliente (Antes de Escribir Una Línea de Código)',
     description: 'La mayoría de desarrolladores cometen el mismo error: construyen la solución primero y buscan clientes después. Nosotros decidimos hacer exactamente lo opuesto.',
     date: '23 de Agosto, 2025',
     slug: 'como-validar-micro-saas-problem-first',

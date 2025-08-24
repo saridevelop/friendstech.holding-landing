@@ -21,7 +21,7 @@ export default function ComoValidarMicroSaasArticle() {
       <article className={`max-w-4xl mx-auto px-8 py-16 text-lg leading-relaxed`}>
         <div className="text-center mb-16">
           <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight ${headingClasses}`}>
-            Cómo Validamos Ideas de Micro-SaaS Hablando Directamente con el Cliente
+            Cómo Validar Ideas de Micro-SaaS Hablando Directamente con el Cliente
           </h1>
           <h2 className={`text-xl md:text-2xl font-medium mb-8 ${subheadingClasses}`}>
             (Antes de Escribir Una Línea de Código)

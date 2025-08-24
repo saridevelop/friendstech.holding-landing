@@ -3,6 +3,7 @@ import { getAllArticles } from '@/lib/articles'
 import NewsletterSection from '@/components/NewsletterSection'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export default function BlogPage() {
   const articles = getAllArticles()
@@ -11,6 +12,15 @@ export default function BlogPage() {
     <>
       <Header />
       <main className="container mx-auto px-4 py-16">
+        <div className="mb-8">
+          <Link 
+            href="/" 
+            className="text-gray-400 hover:text-gray-300 transition-colors"
+          >
+            ← Volver a la home
+          </Link>
+        </div>
+
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Blog Técnico</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
