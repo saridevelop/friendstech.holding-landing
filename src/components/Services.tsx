@@ -6,26 +6,26 @@ export default function Services() {
   const services = [
     {
       icon: Code,
-      title: 'Desarrollo a Medida',
-      description: 'Soluciones de software desde cero, adaptadas a las necesidades específicas de tu negocio.',
+      title: 'Micro-SaaS Development',
+      description: 'Desarrollamos micro-SaaS serverless con JavaScript, Claude y OpenAI para soluciones específicas que resuelven problemas reales.',
       color: 'text-indigo-400'
     },
     {
       icon: Smartphone,
-      title: 'Apps Móviles',
-      description: 'Creación de aplicaciones nativas o híbridas para iOS y Android con una excelente experiencia de usuario.',
+      title: 'Automatizaciones con IA',
+      description: 'Creamos workflows automatizados que integran IA para optimizar procesos empresariales y reducir trabajo manual.',
       color: 'text-purple-400'
     },
     {
       icon: Palette,
-      title: 'Diseño de Producto',
-      description: 'Diseño de UX/UI enfocado en la usabilidad, la estética y la conversión para tus productos digitales.',
+      title: 'Validación Temprana',
+      description: 'Validamos ideas hablando directamente con clientes antes de escribir código, reduciendo riesgos de desarrollo.',
       color: 'text-green-400'
     },
     {
       icon: Lightbulb,
-      title: 'Consultoría',
-      description: 'Validamos tu idea, definimos la estrategia técnica y planificamos la hoja de ruta de tu producto.',
+      title: 'Consultoría Técnica',
+      description: 'Ayudamos a definir arquitecturas serverless, integraciones con APIs de IA y estrategias de desarrollo ágil.',
       color: 'text-yellow-400'
     }
   ]

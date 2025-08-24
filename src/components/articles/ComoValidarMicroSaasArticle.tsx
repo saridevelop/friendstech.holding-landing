@@ -27,7 +27,7 @@ export default function ComoValidarMicroSaasArticle() {
             (Antes de Escribir Una Línea de Código)
           </h2>
           <div className={`flex justify-center items-center gap-6 mb-6 ${mutedClasses}`}>
-            <time>23 de Agosto, 2025</time>
+            <time dateTime="2025-08-23">23 de agosto de 2025</time>
             <span>•</span>
             <span>Tiempo de lectura: 8 minutos</span>
           </div>

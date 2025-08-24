@@ -5,6 +5,9 @@ import Footer from '@/components/Footer'
 import NewsletterSection from '@/components/NewsletterSection'
 import Link from 'next/link'
 import { ReadingModeProvider } from '@/contexts/ReadingModeContext'
+import { generateMetadata as genMeta, generateArticleJsonLd } from '@/lib/seo'
+import { Metadata } from 'next'
+import Script from 'next/script'
 
 // Import article components
 import ComoValidarMicroSaasArticle from '@/components/articles/ComoValidarMicroSaasArticle'
@@ -18,6 +21,27 @@ export function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
   }))
+}
+
+export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
+  const article = getArticleBySlug(params.slug)
+  
+  if (!article) {
+    return {}
+  }
+
+  return genMeta({
+    title: article.title,
+    description: article.description,
+    keywords: article.tags || [],
+    canonicalUrl: `/blog/${article.slug}`,
+    ogType: 'article',
+    publishedTime: new Date(article.date).toISOString(),
+    modifiedTime: new Date(article.date).toISOString(),
+    authors: ['FriendsLab.dev'],
+    section: 'Technology',
+    tags: article.tags,
+  })
 }
 
 interface ArticlePageProps {
@@ -39,8 +63,26 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     notFound()
   }
 
+  const articleJsonLd = generateArticleJsonLd({
+    title: article.title,
+    description: article.description,
+    url: `/blog/${article.slug}`,
+    publishedTime: new Date(article.date).toISOString(),
+    modifiedTime: new Date(article.date).toISOString(),
+    authors: ['FriendsLab.dev'],
+    tags: article.tags || [],
+    readTime: article.readTime,
+  })
+
   return (
     <ReadingModeProvider>
+      <Script 
+        id={`article-jsonld-${article.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd)
+        }}
+      />
       <Header />
       <main className="container mx-auto px-4 py-16">
         <div className="mb-8 flex gap-4">

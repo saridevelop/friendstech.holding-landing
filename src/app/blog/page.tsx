@@ -4,6 +4,16 @@ import NewsletterSection from '@/components/NewsletterSection'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { generateMetadata as genMeta } from '@/lib/seo'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = genMeta({
+  title: 'Blog Técnico - Micro-SaaS, IA y Validación de Ideas',
+  description: 'Artículos sobre micro-SaaS, automatización con IA, validación temprana de ideas, desarrollo serverless y metodologías prácticas para startups.',
+  keywords: ['blog micro-saas', 'artículos automatización IA', 'validación ideas startup', 'desarrollo serverless', 'claude openai'],
+  canonicalUrl: '/blog',
+  ogType: 'website',
+})
 
 export default function BlogPage() {
   const articles = getAllArticles()
