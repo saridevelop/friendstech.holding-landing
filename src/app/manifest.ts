@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'FriendsLab.dev - Micro-SaaS y Automatización con IA',
+    name: 'friendstech.dev - Micro-SaaS y Automatización con IA',
     short_name: 'FriendsLab',
     description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas.',
     start_url: '/',

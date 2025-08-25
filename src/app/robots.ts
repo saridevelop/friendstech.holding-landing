@@ -34,6 +34,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/private/', '/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://friendslab.dev/sitemap.xml',
+    sitemap: 'https://friendstech.dev/sitemap.xml',
   }
 }

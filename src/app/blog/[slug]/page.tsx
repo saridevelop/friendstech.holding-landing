@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
     ogType: 'article',
     publishedTime: new Date(article.date).toISOString(),
     modifiedTime: new Date(article.date).toISOString(),
-    authors: ['FriendsLab.dev'],
+    authors: ['friendstech.dev'],
     section: 'Technology',
     tags: article.tags,
   })
@@ -69,7 +69,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     url: `/blog/${article.slug}`,
     publishedTime: new Date(article.date).toISOString(),
     modifiedTime: new Date(article.date).toISOString(),
-    authors: ['FriendsLab.dev'],
+    authors: ['friendstech.dev'],
     tags: article.tags || [],
     readTime: article.readTime,
   })

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllArticles } from '@/lib/articles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://friendslab.dev'
+  const baseUrl = 'https://friendstech.dev'
   const articles = getAllArticles()
 
   // Static pages

@@ -42,7 +42,7 @@ Create these files in `/public/`:
 ### 2. **Google Search Console**
 1. Add your site to Google Search Console
 2. Replace `'verificar-google-search-console'` in `layout.tsx` with your verification code
-3. Submit sitemap: `https://friendslab.dev/sitemap.xml`
+3. Submit sitemap: `https://friendstech.dev/sitemap.xml`
 
 ### 3. **Optional: Create OG Images for Articles**
 - Size: 1200x630px
@@ -52,7 +52,7 @@ Create these files in `/public/`:
 ## 🎯 SEO Features Added
 
 ### Homepage SEO:
-- **Title**: "FriendsLab.dev - Micro-SaaS y Automatización con IA"
+- **Title**: "friendstech.dev - Micro-SaaS y Automatización con IA"
 - **Keywords**: micro-saas, automatización IA, desarrollo serverless, etc.
 - **Structured Data**: Organization schema
 

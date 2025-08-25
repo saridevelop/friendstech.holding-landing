@@ -15,8 +15,8 @@ interface SEOProps {
 }
 
 const defaultMetadata = {
-  siteName: 'FriendsLab.dev',
-  siteUrl: 'https://friendslab.dev',
+  siteName: 'friendstech.dev',
+  siteUrl: 'https://friendstech.dev',
   twitterHandle: '@friendstechdev',
   defaultImage: '/og-image.png',
   locale: 'es_ES',
@@ -104,7 +104,7 @@ export function generateArticleJsonLd({
   url,
   publishedTime,
   modifiedTime,
-  authors = ['FriendsLab.dev'],
+  authors = ['friendstech.dev'],
   tags = [],
   readTime,
 }: {
@@ -162,7 +162,7 @@ export function generateOrganizationJsonLd() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'hola@friendslab.dev',
+      email: 'info@friendstech.dev',
     },
     description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas.',
   }

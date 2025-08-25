@@ -160,7 +160,7 @@ El proyecto genera archivos estáticos con `next export`, compatible con cualqui
 
 Para dudas o customizaciones adicionales, contacta a:
 
-- **Email**: hola@friendstech.dev
+- **Email**: info@friendstech.dev
 - **Web**: [friendstech.dev](https://friendstech.dev)
 
 ---

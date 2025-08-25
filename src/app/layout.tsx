@@ -3,16 +3,16 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://friendslab.dev'),
+  metadataBase: new URL('https://friendstech.dev'),
   title: {
-    default: 'FriendsLab.dev - Micro-SaaS y Automatización con IA',
-    template: '%s | FriendsLab.dev'
+    default: 'friendstech.dev - Micro-SaaS y Automatización con IA',
+    template: '%s | friendstech.dev'
   },
   description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas para empresas.',
   keywords: ['micro-saas', 'automatización IA', 'desarrollo serverless', 'validación ideas', 'startup', 'claude', 'openai', 'javascript'],
-  authors: [{ name: 'FriendsLab.dev', url: 'https://friendslab.dev' }],
-  creator: 'FriendsLab.dev',
-  publisher: 'FriendsLab.dev',
+  authors: [{ name: 'friendstech.dev', url: 'https://friendstech.dev' }],
+  creator: 'friendstech.dev',
+  publisher: 'friendstech.dev',
   formatDetection: {
     email: false,
     address: false,
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    url: 'https://friendslab.dev',
-    siteName: 'FriendsLab.dev',
-    title: 'FriendsLab.dev - Micro-SaaS y Automatización con IA',
+    url: 'https://friendstech.dev',
+    siteName: 'friendstech.dev',
+    title: 'friendstech.dev - Micro-SaaS y Automatización con IA',
     description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'FriendsLab.dev - Micro-SaaS y Automatización con IA',
+        alt: 'friendstech.dev - Micro-SaaS y Automatización con IA',
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@friendstechdev',
     creator: '@friendstechdev',
-    title: 'FriendsLab.dev - Micro-SaaS y Automatización con IA',
+    title: 'friendstech.dev - Micro-SaaS y Automatización con IA',
     description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas.',
     images: ['/og-image.png'],
   },
@@ -110,14 +110,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'FriendsLab.dev',
-              url: 'https://friendslab.dev',
-              logo: 'https://friendslab.dev/logo.png',
+              name: 'friendstech.dev',
+              url: 'https://friendstech.dev',
+              logo: 'https://friendstech.dev/logo.png',
               sameAs: ['https://twitter.com/friendstechdev'],
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'customer support',
-                email: 'hola@friendslab.dev',
+                email: 'info@friendstech.dev',
               },
               description: 'Convertimos ideas en micro-SaaS y automatizaciones con IA. Desarrollo serverless, validación temprana y soluciones personalizadas.',
             })
